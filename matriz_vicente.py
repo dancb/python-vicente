@@ -11,15 +11,6 @@ matriz = [
 for fila in matriz:
     for columna in fila:
         print(f"El valor en la celda actual es: {columna}")
-
-print(" ")
-print(" ")
-
-for x in range(len(matriz)):
-    for y in range(len(matriz[x])):
-        print(f"El valor en la celda actual es: {matriz[x][y]}")
-        print(f"El valor del eje x es: {matriz[x]}")
-        print(f"El valor del eje y es: {matriz[y]}")
         
 print(" ")
 print(" ")
