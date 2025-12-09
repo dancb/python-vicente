@@ -1,4 +1,4 @@
-# Orden de lectura
+# Orden de lectura/estudio por carpetas
 
 1. Primero la carpeta **listas**, aquí se encuentra lo necesario para entender listas y listas sobre listas (matrices).
 
