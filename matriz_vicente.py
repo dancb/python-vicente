@@ -7,7 +7,7 @@ matriz = [
 
 # El primer 'for' elige la fila completa
 # El segundo 'for' corresponde a la columna 
-# y el cruce de la fila con la columna te da la 'celda' (si lo imaginamos con una hoja de excel)
+# y el cruce de la fila con la columna te da la 'celda' (si lo imaginamos como una hoja de excel)
 for fila in matriz:
     for columna in fila:
         print(f"El valor en la celda actual es: {columna}")

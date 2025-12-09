@@ -74,3 +74,9 @@ print(lista)
 print(" ")
 print(" ") 
   
+# Crear una lista vacia y llenarla
+lista_vacia = []
+lista_vacia.append("uno")
+lista_vacia.append("dos")
+lista_vacia.append("tres")
+print(lista_vacia)
