@@ -31,11 +31,9 @@ with open("bodega.csv", "w", newline='') as csvfile: # newline='' evita líneas 
     # Escribimos fila por fila
     for fila in datos:
         escritor.writerow(fila) # writerow escribe una lista como una línea del CSV [cite: 160]
-        
-# Lectura del SCV
-with open("bodega.csv", "r") as csvfile:
-    lector = csv.reader(csvfile, delimiter=",") # Preparamos el lector [cite: 165]
-    
-    for fila in lector:
-        # 'fila' es una lista con los datos: ej. ['Leche', '1000', '50']
-        print(f"Producto: {fila[0]} - Precio: {fila[1]}")
+      
+
+# Creamos el archivo mi_archivo.txt si no existe para que sea leido en el archivo leer_archivo.py.
+# "w" significa WRITE (escribir). Si el archivo no existe, lo crea.
+with open("mi_archivo.txt", "w") as archivo:
+    archivo.write("Este es el contenido inicial del archivo.\nLínea 2 del archivo.")

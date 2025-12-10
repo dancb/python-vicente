@@ -1,7 +1,8 @@
-# Leer todo el archivo de una.
-# "r" significa READ (Leer)
-# la funcion 'with' se encarga de abrir el archivo y tambien cerrarlo cuando termina el bloque de ejecucion.
-# Tienes que tener claro lo anterior, 'with' lo mencionan bastante en tu ppt de utilidades
+import csv # Necesario importarlo para trabajar con archivos csv
+
+# Leemos todo el archivo mi_archivo.txt de una sola vez.
+# "r" significa READ (leer)
+# 'with' abre y cierra el archivo automáticamente al terminar el bloque.
 with open("mi_archivo.txt", "r") as archivo:
     contenido_completo = archivo.read()
     print(contenido_completo)
@@ -16,4 +17,12 @@ with open("mi_archivo.txt", "r") as archivo:
     lista_de_lineas = archivo.readlines()
     # Ahora es una lista normal, podemos iterar:
     for linea in lista_de_lineas:
-        print(f"Leído: {linea}") # .strip() quita el salto de línea sobrante
+        print(f"Leído: {linea}")
+        
+# Lectura del SCV
+with open("bodega.csv", "r") as csvfile:
+    lector = csv.reader(csvfile, delimiter=",") # Preparamos el lector [cite: 165]
+    
+    for fila in lector:
+        # 'fila' es una lista con los datos: ej. ['Leche', '1000', '50']
+        print(f"Producto: {fila[0]} - Precio: {fila[1]}")

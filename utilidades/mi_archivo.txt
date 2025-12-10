@@ -1,0 +1,2 @@
+Este es el contenido inicial del archivo.
+Línea 2 del archivo.
