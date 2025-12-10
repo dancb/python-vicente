@@ -1,0 +1,7 @@
+Lista de Supermercado:
+ManzanasPerasUvas
+
+--- Corregido ---
+Manzanas
+Peras
+Uvas
