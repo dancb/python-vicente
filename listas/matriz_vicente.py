@@ -5,6 +5,10 @@ matriz = [
     [True, False, True]
 ]
 
+print("MATRIX ")
+print(matriz[1])
+print("MATRIX ")
+
 # El primer 'for' elige la fila completa
 # El segundo 'for' corresponde a la columna 
 # y el cruce de la fila con la columna te da la 'celda' (si lo imaginamos como una hoja de excel)
